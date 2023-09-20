@@ -1,10 +1,3 @@
-//
-//  Persistence.swift
-//  ScrumDinger
-//
-//  Created by eigen.vector on 2023/08/30.
-//
-
 import CoreData
 
 struct PersistenceController {

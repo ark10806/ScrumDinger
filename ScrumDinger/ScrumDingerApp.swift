@@ -1,20 +1,12 @@
-//
-//  ScrumDingerApp.swift
-//  ScrumDinger
-//
-//  Created by eigen.vector on 2023/08/30.
-//
-
 import SwiftUI
 
 @main
 struct ScrumDingerApp: App {
-    let persistenceController = PersistenceController.shared
+    @State private var scrums = DailyScrum.sampleData
 
     var body: some Scene {
         WindowGroup {
-            MeetingView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ScrumsView(scrums: $scrums)
         }
     }
 }

@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ScrumDinger
-//
-//  Created by eigen.vector on 2023/08/30.
-//
-
 import SwiftUI
 import CoreData
 
@@ -22,7 +15,7 @@ struct MeetingView: View {
                 VStack(alignment: .leading) {
                     Text("Seconds Remaining")
                         .font(.caption)
-                    Label("600", systemImage: "hourglass.bottomhalf.fill")
+                    Label("1000", systemImage: "hourglass.bottomhalf.fill")
                 }
             }
             .accessibilityElement(children: .ignore)
